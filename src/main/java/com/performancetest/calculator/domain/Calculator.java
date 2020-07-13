@@ -1,4 +1,4 @@
-package com.test.calculator.domain;
+package com.performancetest.calculator.domain;
 
 import java.math.BigDecimal;
 

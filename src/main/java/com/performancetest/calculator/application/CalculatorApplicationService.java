@@ -1,6 +1,7 @@
-package com.test.calculator.application;
+package com.performancetest.calculator.application;
 
-import com.test.calculator.domain.Calculator;
+import com.performancetest.calculator.domain.Calculator;
+import com.performancetest.calculator.domain.Calculator;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
