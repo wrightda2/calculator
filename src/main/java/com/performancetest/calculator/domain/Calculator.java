@@ -19,4 +19,8 @@ public class Calculator {
     public static BigDecimal divide(BigDecimal dividend, BigDecimal divisor) {
         return dividend.divide(divisor);
     }
+
+    public static BigDecimal remainder(BigDecimal dividend, BigDecimal divisor) {
+        return dividend.remainder(divisor);
+    }
 }

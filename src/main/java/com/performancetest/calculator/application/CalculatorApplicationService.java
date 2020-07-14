@@ -1,7 +1,6 @@
 package com.performancetest.calculator.application;
 
 import com.performancetest.calculator.domain.Calculator;
-import com.performancetest.calculator.domain.Calculator;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -22,5 +21,9 @@ public class CalculatorApplicationService {
 
     public BigDecimal divide(BigDecimal dividend, BigDecimal divisor) {
         return Calculator.divide(dividend, divisor);
+    }
+
+    public BigDecimal remainder(BigDecimal dividend, BigDecimal divisor) {
+        return Calculator.remainder(dividend, divisor);
     }
 }

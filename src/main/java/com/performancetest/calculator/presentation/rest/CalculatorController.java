@@ -43,4 +43,12 @@ public class CalculatorController {
         }
         return calculatorApplicationService.divide(dividend, divisor);
     }
+
+    @GetMapping("/remainder")
+    public BigDecimal remainder(@RequestParam BigDecimal dividend, @RequestParam BigDecimal divisor) {
+        if (divisor.toBigInteger() == BigInteger.ZERO) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Divisor param cannot be zero (0)");
+        }
+        return calculatorApplicationService.remainder(dividend, divisor);
+    }
 }
